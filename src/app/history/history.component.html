@@ -1,0 +1,37 @@
+<div class="tablecss">
+<div class="container">
+ 
+<table class="table table-sm" >
+  <thead>
+    <tr class="table-active">
+      <th>Id</th>
+      <th>RequestBy</th>
+      <th>Building Name</th>
+      <th>Floor</th>
+      <th>Room</th>
+      <th>Seats</th>
+      <th>Project</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of request">
+    <tr >
+       
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.requestId}}</td>
+      <td>{{item.building}}</td>
+      <td>{{item.floor}}</td>
+      <td>{{item.seats}}</td>
+      <td>345</td>
+      
+      <td>{{item.projectId}}</td>
+      <td  class="text-warning"> {{item.status}}</td>
+    
+      
+    </tr>
+
+   
+  </tbody>
+</table>
+  </div>
+</div>
