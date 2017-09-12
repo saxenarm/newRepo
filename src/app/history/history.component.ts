@@ -14,7 +14,7 @@ request:Array<any>;
   }
 
 }
-const x=[{id:1,requestId:11,projectId:3,building:"A",floor:1,seats:10,status:"Approved"},
+const x=[{id:1,requestId:11,projectId:3,building:"A",floor:1,seats:10,status:0},
 {id:2,requestId:22,projectId:111,building:"A",floor:2,seats:20,status:"Approved"},
 {id:3,requestId:33,projectId:222,building:"A",floor:3,seats:30,status:"Approved"},
 {id:4,requestId:44,projectId:333,building:"A",floor:4,seats:40,status:"Rejected"},
