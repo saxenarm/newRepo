@@ -15,7 +15,7 @@
     </tr>
   </thead>
   <tbody *ngFor="let item of request">
-    <tr >
+    <tr class=  "table-warning" >
        
       <th scope="row">{{item.id}}</th>
       <td>{{item.requestId}}</td>
@@ -25,7 +25,8 @@
       <td>345</td>
       
       <td>{{item.projectId}}</td>
-      <td  class="text-warning" > {{item.status}}</td>
+     
+    <td  class="text-warning" > <a [routerLink]="['/ViewRequest']">View</a></td>
     
       
     </tr>

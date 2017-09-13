@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HistoryComponent } from './history/history.component';
+import { ViewRequestComponent } from './view-request/view-request.component';
+import {ViewRoutingModule} from './View.routing';
+import { RejectComponent } from './reject/reject.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HistoryComponent
+    HistoryComponent,
+    ViewRequestComponent,
+    RejectComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ViewRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
