@@ -1,9 +1,9 @@
-<div class="tablecss">
+<!-- <div class="tablecss">
 <div class="container">
- 
-<table  class="table table-bordered" >
+ <h2>Open Request</h2>
+<table  class="table table-bordered table-responsive" >
   <thead>
-    <tr class="table-active">
+    <tr class="table-warning " id="heading">
       <th>Id</th>
       <th>RequestBy</th>
       <th>Building Name</th>
@@ -15,7 +15,7 @@
     </tr>
   </thead>
   <tbody *ngFor="let item of request">
-    <tr class=  "table-warning" >
+    <tr class=  "table-active" >
        
       <th scope="row">{{item.id}}</th>
       <td>{{item.requestId}}</td>
@@ -26,7 +26,7 @@
       
       <td>{{item.projectId}}</td>
      
-    <td  class="text-warning" > <a [routerLink]="['/ViewRequest']">View</a></td>
+    <td  class="text-warning" > <button  type="button" class="btn btn-info" [routerLink]="['/ViewRequest']">View</button></td>
     
       
     </tr>
@@ -35,4 +35,47 @@
   </tbody>
 </table>
   </div>
-</div>
+</div> -->
+
+
+<main class="container pt-5">
+    <div class="card mb-5">
+        <div class="card-header"><h2>Pending Requests</h2></div>
+        <div class="card-block p-0">
+            <table class="table table-bordered table-sm m-0 ">
+                <thead class="">
+                    <tr>
+                        
+                        <th>Id</th>
+                        <th>RequestBy</th>
+                        <th>Building Name</th>
+                        <th>Floor</th>
+                        <th>Room</th>
+                        <th>Seats</th>
+                        <th>Project</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let item of request">
+                    <tr>
+                        <th scope="row">{{item.id}}</th>
+                        <td>{{item.requestId}}</td>
+                        <td>{{item.building}}</td>
+                        <td>{{item.floor}}</td>
+                        <td>{{item.seats}}</td>
+                        <td>345</td>
+                        
+                        <td>{{item.projectId}}</td>
+                       
+                      <td  class="text-warning" > <a   [routerLink]="['/ViewRequest']">View</a></td>
+                      
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        
+    </div>
+    </div>
+    
+</main>

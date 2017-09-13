@@ -6,7 +6,7 @@ import { Component, OnInit,Output } from '@angular/core';
   styleUrls: ['./history.component.css']
 })
 export class HistoryComponent implements OnInit {
-
+//@Output x:any{};
   constructor() { }
 request:Array<any>;
   ngOnInit() {
