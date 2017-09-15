@@ -1,248 +1,91 @@
-
-
-
+<!-- <div class="tablecss">
 <div class="container">
-<div class="room">
- 
-    
-
-
-
-
-
-
-
-
-
-
-
-<h2>Room Structure</h2>
-
-
-
-  <ol >
-    <li class="row ">
-      <ol class="seats" type="A">
-        <li class="seat">
-          <input type="checkbox" id="1A" />
-          <label for="1A">1A</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox" id="1B" />
-          <label for="1B">1B</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox"    id="1C" />
-          <label for="1C">1C</label>
-        </li>
-
-        
-        <li class="seat">
-          <input type="checkbox"  disabled  id="1D" />
-          <label for="1D">Occupied</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox"  id="1E" />
-          <label for="1E">1E</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox" [disabled]="m()" id="1F" />
-          <label for="1F">1F</label>
-        </li>
-      
-    
-     
-        <li class="seat">
-          <input type="checkbox" id="2A"  />
-          <label for="2A">2A</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox"  id="2B"/>
-          <label for="2B">2B</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox" id="2C" />
-          <label for="2C">2C</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox" id="2D" />
-          <label for="2D">2D</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox" id="2E" />
-          <label for="2E">2E</label>
-        </li>
-        <li class="seat">
-          <input type="checkbox" id="2F" />
-          <label for="2F">2F</label>
-        </li>
-      </ol>
-    </li>
-    <li class="row row--1">
-        <ol class="seats" type="A">
-          <li class="seat">
-            <input type="checkbox" id="1A" />
-            <label for="1A">1A</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox" id="1B" />
-            <label for="1B">1B</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox"    id="1C" />
-            <label for="1C">1C</label>
-          </li>
-  
-          <li class="seat">
-            <input type="checkbox"  disabled  id="1D" />
-            <label for="1D">Occupied</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox"  id="1E" />
-            <label for="1E">1E</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox" [disabled]="m()" id="1F" />
-            <label for="1F">1F</label>
-          </li>
-        
-      
+ <h2>Open Request</h2>
+<table  class="table table-bordered table-responsive" >
+  <thead>
+    <tr class="table-warning " id="heading">
+      <th>Id</th>
+      <th>RequestBy</th>
+      <th>Building Name</th>
+      <th>Floor</th>
+      <th>Room</th>
+      <th>Seats</th>
+      <th>Project</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of request">
+    <tr class=  "table-active" >
        
-          <li class="seat">
-            <input type="checkbox" id="2A"  />
-            <label for="2A">2A</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox"  id="2B"/>
-            <label for="2B">2B</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox" id="2C" />
-            <label for="2C">2C</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox" id="2D" />
-            <label for="2D">2D</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox" id="2E" />
-            <label for="2E">2E</label>
-          </li>
-          <li class="seat">
-            <input type="checkbox" id="2F" />
-            <label for="2F">2F</label>
-          </li>
-        </ol>
-      </li>
-  
-      <li class="row row--1">
-          <ol class="seats" type="A">
-            <li class="seat">
-              <input type="checkbox" id="1A" />
-              <label for="1A">1A</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox" id="1B" />
-              <label for="1B">1B</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox"    id="1C" />
-              <label for="1C">1C</label>
-            </li>
-    
-            <!-- <div *ngIf={{x}}=="" -->
-            <li class="seat">
-              <input type="checkbox"  disabled  id="1D" />
-              <label for="1D">Occupied</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox"  id="1E" />
-              <label for="1E">1E</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox" [disabled]="m()" id="1F" />
-              <label for="1F">1F</label>
-            </li>
-          
-        
-         
-            <li class="seat">
-              <input type="checkbox" id="2A"  />
-              <label for="2A">2A</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox"  id="2B"/>
-              <label for="2B">2B</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox" id="2C" />
-              <label for="2C">2C</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox" id="2D" />
-              <label for="2D">2D</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox" id="2E" />
-              <label for="2E">2E</label>
-            </li>
-            <li class="seat">
-              <input type="checkbox" id="2F" />
-              <label for="2F">2F</label>
-            </li>
-          </ol>
-        </li>
+      <th scope="row">{{item.id}}</th>
+      <td>{{item.requestId}}</td>
+      <td>{{item.building}}</td>
+      <td>{{item.floor}}</td>
+      <td>{{item.seats}}</td>
+      <td>345</td>
       
-  
-        <div>
-            
-              
-           
+      <td>{{item.projectId}}</td>
+     
+    <td  class="text-warning" > <button  type="button" class="btn btn-info" [routerLink]="['/ViewRequest']">View</button></td>
+    
+      
+    </tr>
 
-            
-              <div class="container">
-                <div class="row">
-                    <button type="button" class="btn btn-success">Approve</button>
-                
-              <button class="btn btn-danger "   style="margin-left:50px" data-toggle="modal" data-target="#myModal">
-                 Reject
-              </button>
-              
-              
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                    
-                    </div>
-                    <div class="modal-body">
-                      
-                              
-                              <form action="" method="post">
-                                  <div class="input-group">
-                
-                <input type="text" class="form-control" placeholder="Write" >
-              </div>
-                                  <br />
-                                  <button type="submit" value="sub" name="sub" class="btn btn-primary"><i class="fa fa-share"></i>Send Reason!</button>
-                            </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-                </div>
-              </div>
-                  
-
-          
-            </div>
-  </ol>
- 
- 
+   
+  </tbody>
+</table>
   </div>
-</div> 
+</div> -->
 
 
+
+
+<main class="container pt-5">
+  <div class="card mb-5">
+      <div class="card-header"><h2>Pending Requests</h2></div>
+      <div class="card-block p-0">
+          <table class="table table-bordered table-sm m-0 ">
+              <thead class="">
+                  <tr>
+                      
+                      <th>Request Id</th>
+                      <th>Requested By</th>
+                      <th>Location </th>
+                      <th>Building Name</th>
+                      <th>Floor</th>
+                      <th>Seats</th>
+                      <th>Status</th>
+                      
+                  </tr>
+              </thead>
+              <tbody *ngFor="let item of request">
+                  <tr>
+                      <th scope="row">{{item.id}}</th>
+                      <td>{{item.requestby}}</td>
+                      <td>{{item.location}}</td>
+                      <td>{{item.building}}</td>
+                      <td>{{item.floor}}</td>
+                      
+                      <td>{{item.seats}}</td>
+                      <td >{{item.status}}</td>
+                    
+                    
+                      
+                     
+                     
+                   
+                      
+                
+                      <!-- <td  class="text-warning" ><a [routerLink]="['/ViewRequest']"> <button type="button" class="btn btn-danger">Reject</button> </a></td> -->
+                      
+                    
+                      
+                  </tr>
+                  
+              </tbody>
+          </table>
+      
+  </div>
+  </div>
+  
+</main>

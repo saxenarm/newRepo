@@ -7,15 +7,17 @@ html {
 }
 
 .room {
-  margin: 10px auto;
+  margin: 100px auto;
   max-width: 300px;
   margin-left: 200px;
-  border: 5px border-style black;
+  border: 5px border-style #BD2121;
 }
-h2 { color: #625F44; font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin-left: 30px; }
+h2 { color: #625F44; font-family:  "Paytone One", serif; font-size: 45px; font-weight: normal; line-height: 48px; margin-left: 30px; }
   
 
-
+.myy{
+  margin-left: 13px;
+}
 
 
 
@@ -72,7 +74,7 @@ ol {
   position: absolute;
   opacity: 0;
 }.seat input[type=checkbox]:checked + label {
-  background: #bada55;
+  background: #2B05C1;
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
   animation-duration: 300ms;
@@ -83,8 +85,11 @@ ol {
   text-indent: -9999px;
   overflow: hidden;
 }
+.my{
+  margin-left: 30px;
+}
 .seat input[type=checkbox]:disabled + label:after {
-  content: "X";
+  content: "B";
   text-indent: 0;
   position: absolute;
   top: 4px;
@@ -104,7 +109,7 @@ ol {
   font-weight: bold;
   line-height: 1.5rem;
   padding: 4px 0;
-  background: #F42536;
+  background: #87B0C1;
   border-radius: 5px;
   animation-duration: 300ms;
   animation-fill-mode: both;
